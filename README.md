@@ -19,18 +19,13 @@ I'll keep things barebones for my own understanding while providing some referen
     - [Section 6: Responsiveness](#section-6-responsiveness)
     - [Section 7: Frameworks](#section-7-frameworks)
 
-### Section 1: HTML Basics
-- HTML is creating the structure of the page, and CSS is the design
+### Section 1: Java Basics
+- Java Structure
 
-1. #### ***HTML Boilerplate Page Setup***
-    - The homepage should always be named index.html as servers will look for it by default
-    - **To trigger the boilerplate code all the below in VScode, just type "!" without the quotes**
-
-    - Boilerplate Setup: 
-        - The first line should declare a doctype. In HTML, this would be
-            ```
-            <!DOCTYPE html>
-            ```
+1. #### ***Java Formatting***
+    - // for commenting
+    - 'System' must be capitalized
+        - 
         - After declaring a doctype, we have to put everything within the HTML container
             ```
             <html>
