@@ -11,7 +11,7 @@ I'll keep things barebones for my own understanding while providing some referen
 - [Java Journey Notes](#java-journey-notes)
 - [Reference Links](#reference-links)
     - [Table of Contents](#table-of-contents)
-    - [Section 1: HTML Basics](#section-1-html-basics)
+    - [Section 1: HTML Basics](#section-1-java-basics)
     - [Section 2: CSS Basics](#section-2-css-basics)
     - [Section 3: Adaptive Sizing](#section-3-adaptive-sizing)
     - [Section 4: Box Model and Page Structure](#section-4-box-model-and-page-structure)
@@ -45,7 +45,9 @@ I'll keep things barebones for my own understanding while providing some referen
             ...
         ```
         - the scanner tool comes with Java and reads user input
-    -  Assigning and executing variable name via a string
+
+2. #### ***Strings***
+    - Assigning and executing variable name via a string
         ```
         String message = "Hello World";
         //message would be the variable name
@@ -59,7 +61,4 @@ I'll keep things barebones for my own understanding while providing some referen
             ```
             System.out.println(message + "hello world");
             ```
-    - 
-
-2. #### ***HTML Foundations***
     - 
