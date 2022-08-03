@@ -61,4 +61,23 @@ I'll keep things barebones for my own understanding while providing some referen
             ```
             System.out.println(message + "hello world");
             ```
+            - If writing text that is long and want to add new lines, do '/n' within the quotes for a new line
+    - Add scanner to string variable - i.e. reading user input
+        ```
+        String message = scanner.nextLine();
+        ```
+        - The variable (message) output won't get printed until it's called. This means we
+        can add a delay of printing the variable until we get multiple inputs
+    - Multi-step process combining with text
+        ```
+        System.out.println("What's your name?");
+        String message = scanner.nextLine();
+        System.out.println("Hi " + message);
+        ```
+    - Difference between 'scanner.nextLine' and 'reader.nextLine':
+        - scanner saves the input to memory and doesn't return it
+        - reader will return the input when the variable is called
+
+3. #### ***Variables***
     - 
+        ```
