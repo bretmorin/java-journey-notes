@@ -159,5 +159,14 @@ I'll keep things barebones for my own understanding while providing some referen
         ```
 
 4. #### ***Calculating with Numbers***
-    - Assigning and executing variable name via a string
-        ```
+    - Math basic order of operations takes place, with multiplication and division executing before addition and subtraction, and performed left to right
+        - We can affect the order of operations by adding parentheses
+            ```
+            int calcu = (1 + 1) + 3 * (2 + 5); //prints 23
+            int calcu = 1 + 1 + 3 * 2 + 5; //prints 13
+            ```
+        - We can add parentheses to the println command instead of just the variable
+            ```
+            System.out.println("Four: " + (2 + 2));
+            ```
+    - 
