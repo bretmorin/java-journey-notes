@@ -60,7 +60,8 @@ I'll keep things barebones for my own understanding while providing some referen
         int months = 12;
         ```
         - The variable name is 'months' and the value is 12
-    - No two variables can have the same name
+    - Variable naming
+        - No two variables can have the same name
         ```
         int months = 12;
         System.out.println("the value is " + months);
@@ -70,6 +71,8 @@ I'll keep things barebones for my own understanding while providing some referen
         - The system would print 12 first, and then 24.
             - The computer first creates a container called 'months' that is defined as a 'int' type, and 12 is input into the container
             - For the 2nd value, the computer checks to see if a container already exists. If it does, the new value overwrites the old value. If the container name isn't found, there will be an error message
+        - Variables cannot have spaces or ! in name, but can have numbers as long as the name doesn't begin with a number
+            - camelCase should be used in naming when possible
     - Variables cannnot have two different type's
         ```
         boolean integerTest = false;
@@ -86,15 +89,6 @@ I'll keep things barebones for my own understanding while providing some referen
             int value = 10;
             floatingPoint = value; //also works
             ``` 
-        - 
-
-
-
-
-
-
-
-
 
 3. #### ***Strings***
     - Assigning and executing variable name via a string
@@ -135,4 +129,35 @@ I'll keep things barebones for my own understanding while providing some referen
 
         System.out.println(surfaceArea); //1519.76 output
         ```
-   
+    - Converting string to integer
+        ```
+        String valueAsString = "42"; //42 being text
+        int value = Integer.valueOf(valueAsString);
+        System.out.println(value); //42 is the output as a number
+        //Integer.valueOf command 
+        ```
+        ```
+        System.out.println("Give a number:");
+        int result = Integer.valueOf(scanner.nextLine()); //reads input from first prompt and converts
+        System.out.println("You gave the number " + result);
+        ```
+    - Converting string to a double 
+        ```
+        String valueAsString = "42.42"; //string (text)
+        double value = Double.valueOf(valueAsString); //Double.valueOf takes string and converts as parameter
+        System.out.println(value); //42.42 output
+        ```
+        - We can also convert an integer(whole number) into a double (floating-point)
+    - Reading booleans
+        ```
+        System.out.println("Write a boolean");
+        boolean value = Boolean.valueOf(scanner.nextLine()); //Boolean.valueOf converts string to boolean
+        System.out.println("You wrote " + value); 
+        //Write a boolean
+        //(if you write 'True', it will say true in next line. If you write anything but T/F, it will say 'false')
+        //You wrote false
+        ```
+
+4. #### ***Calculating with Numbers***
+    - Assigning and executing variable name via a string
+        ```
