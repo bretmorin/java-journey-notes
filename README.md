@@ -46,7 +46,57 @@ I'll keep things barebones for my own understanding while providing some referen
         ```
         - the scanner tool comes with Java and reads user input
 
-2. #### ***Strings***
+2. #### ***Variables***
+    - Think of a variable as a container in which information can be stored
+        - Examples include:
+            - Text (string)
+            - whole numbers (int)
+                - i.e. 123
+            - floating-point numbers (double)
+                - i.e. 1.352454
+            - true/false (boolean)
+    - Variables are assigned using = sign
+        ```
+        int months = 12;
+        ```
+        - The variable name is 'months' and the value is 12
+    - No two variables can have the same name
+        ```
+        int months = 12;
+        System.out.println("the value is " + months);
+        months = 24;
+        System.out.println("the value is " + months);
+        ```
+        - The system would print 12 first, and then 24.
+            - The computer first creates a container called 'months' that is defined as a 'int' type, and 12 is input into the container
+            - For the 2nd value, the computer checks to see if a container already exists. If it does, the new value overwrites the old value. If the container name isn't found, there will be an error message
+    - Variables cannnot have two different type's
+        ```
+        boolean integerTest = false;
+        integerTest = 123; //does not work
+
+        int value = 10;
+        integerTest = values; //neither does this
+        ```
+        - Exception for this rule is that an integer can be assigned to a floating-point variable, since Java knows how to convert an integer to a floating-point during assignment
+            ```
+            double floatingPoint = 0.42;
+            floatingPoint = 1; //works
+
+            int value = 10;
+            floatingPoint = value; //also works
+            ``` 
+        - 
+
+
+
+
+
+
+
+
+
+3. #### ***Strings***
     - Assigning and executing variable name via a string
         ```
         String message = "Hello World";
@@ -57,27 +107,32 @@ I'll keep things barebones for my own understanding while providing some referen
             String message = "Hello World";
             System.out.println(message);
             ```
-        - We can use a '+' sign to join (concatenate) a variable and a string
-            ```
-            System.out.println(message + "hello world");
-            ```
-            - If writing text that is long and want to add new lines, do '/n' within the quotes for a new line
     - Add scanner to string variable - i.e. reading user input
         ```
         String message = scanner.nextLine();
         ```
         - The variable (message) output won't get printed until it's called. This means we
         can add a delay of printing the variable until we get multiple inputs
+        - Difference between 'scanner.nextLine' and 'reader.nextLine':
+            - scanner saves the input to memory and doesn't return it
+            - reader will return the input when the variable is called
+    - We can use a '+' sign to join (concatenate) a variable and a string
+        ```
+        System.out.println(message + "hello world");
+        ```
+        - If writing text that is long and want to add new lines, do '/n' within the quotes for a new line
     - Multi-step process combining with text
         ```
         System.out.println("What's your name?");
         String message = scanner.nextLine();
         System.out.println("Hi " + message);
         ```
-    - Difference between 'scanner.nextLine' and 'reader.nextLine':
-        - scanner saves the input to memory and doesn't return it
-        - reader will return the input when the variable is called
-
-3. #### ***Variables***
-    - 
+    - Math with variables
         ```
+        double pi = 3.14;
+        double radius = 22.0;
+        double surfaceArea = pi * radius * radius;
+
+        System.out.println(surfaceArea); //1519.76 output
+        ```
+   
