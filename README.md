@@ -89,6 +89,20 @@ I'll keep things barebones for my own understanding while providing some referen
             int value = 10;
             floatingPoint = value; //also works
             ``` 
+    - Order of variable assignment
+        ```
+        int test = 5;
+        test = 2; //test is now 2, not 5
+        ```
+        - We can shorthand change a variable later on, and the most recent value is the most relevant
+        - If we have a variable assigned to a variable, it will only find the most recent iteration value of that variable
+            ```
+            int second = 32;
+            int first = 25;
+            second = 17; // second now is 17
+            first = second; // this just means that first = 17
+            System.out.println(second); //prints 17
+            ```
 
 3. #### ***Strings***
     - Assigning and executing variable name via a string
@@ -169,4 +183,25 @@ I'll keep things barebones for my own understanding while providing some referen
             ```
             System.out.println("Four: " + (2 + 2));
             ```
-    - 
+    - Division between two integers will always produce an integer, rounded
+        - However, if one or more of the numbers is a floating-point, then the result will be floating-point
+            ```
+            double whenDividendIsFloat = 3.0 / 2;
+            System.out.printIn(whenDividendIsFloat); // prints 1.5
+            ```
+            - This does not apply if assigned to an int variable, like so
+                ```
+                int integer = 3.0 /2;
+                System.out.println(integer); // 1
+                ```
+        - An integer can be converted to floating-point by assigning a variable that specifies a type operation before it
+            ```
+            int first = 3;
+            int second = 2;
+
+            double result1 = (double) first / second; // double must be in parentheses
+            System.out.println(result1); // prints 1.5
+            // if result1 = (double) (first / second), then the result would not be converted as the division would be executed first
+            ```
+5. #### ***Conditional Statements and Operations***
+    - Math basic o
