@@ -204,4 +204,37 @@ I'll keep things barebones for my own understanding while providing some referen
             // if result1 = (double) (first / second), then the result would not be converted as the division would be executed first
             ```
 5. #### ***Conditional Statements and Operations***
-    - Math basic o
+    - 'if' conditions are to be formatted within parentheses like so
+        ```
+        System.out.println("Hello, world!");
+        if (true) {                                 //as seen by (true)
+            System.out.println("This code is unavoidable!");
+        }
+        ```
+        - 'else if' statements act like continuous blocks, like so
+            ```
+            if (first == second) { 
+                System.out.println("Same!"); 
+            } else if (first > second) { 
+                System.out.println("The first was larger than the second!"); 
+            } else {
+                System.out.println("The second was larger than the first!");
+            }
+            ```
+    - A code block refers to a section enclosed by curly brackets within the source code
+        ```
+        public class Program { //code block starts with these brackets
+            public static void main(String[] args) { //code block starts with these brackets
+
+            }
+        }
+        ```
+        - Code inside a block should be indented for readability
+    - Comparison Operators
+        * > greater than
+        * >= greater than or equal to
+        * < less than
+        * <= less than or equal to
+        * == equal to
+        * != not equal to
+    - 
