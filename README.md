@@ -204,6 +204,22 @@ I'll keep things barebones for my own understanding while providing some referen
             // if result1 = (double) (first / second), then the result would not be converted as the division would be executed first
             ```
 5. #### ***Conditional Statements and Operations***
+    - A code block refers to a section enclosed by curly brackets within the source code
+        ```
+        public class Program { //code block starts with these brackets
+            public static void main(String[] args) { //code block starts with these brackets
+
+            }
+        }
+        ```
+        - Code inside a block should be indented for readability
+    - Comparison Operators
+        * > greater than
+        * >= greater than or equal to
+        * < less than
+        * <= less than or equal to
+        * == equal to
+        * != not equal to
     - 'if' conditions are to be formatted within parentheses like so
         ```
         System.out.println("Hello, world!");
@@ -221,20 +237,45 @@ I'll keep things barebones for my own understanding while providing some referen
                 System.out.println("The second was larger than the first!");
             }
             ```
-    - A code block refers to a section enclosed by curly brackets within the source code
-        ```
-        public class Program { //code block starts with these brackets
-            public static void main(String[] args) { //code block starts with these brackets
-
+        - Another example
+            ```
+            int result = Integer.valueOf(scan.nextLine());
+            if (result > 0) {
+                System.out.println("The number is positive.");
+            } else {
+                System.out.println("The number is not positive.");
             }
+            ```
+    - 'else if' command offers multiple conditionals 
+        ```
+        System.out.println("Give the first number:");
+        int first = Integer.valueOf(scan.nextLine());
+        System.out.println("Give the second number:");
+        int sec = Integer.valueOf(scan.nextLine());
+        
+        if (first > sec) {
+            System.out.println("Greater number is: " + first);
+        } else if (first == sec) {
+            System.out.println("The numbers are equal!");
+        } else if (first < sec) {
+            System.out.println("Greater number is: " + sec);
         }
         ```
-        - Code inside a block should be indented for readability
-    - Comparison Operators
-        * > greater than
-        * >= greater than or equal to
-        * < less than
-        * <= less than or equal to
-        * == equal to
-        * != not equal to
+    - Order of execution for comparisons
+        - When doing 'if else' statements, the comparisons are executed top-down and will stop once a criteria is met
+            - In the above example, it will stop if 'first > sec' immediately
+        - This is a good example, as the code stops executing when the value is less than a specified value and doesn't continue, causing it to give a different 'grade'
+            ```
+            int grade = Integer.valueOf(scan.nextLine());
+    
+            if (grade < 0) {
+                System.out.println("Grade: impossible!");
+            } else if (grade <= 49) {
+                System.out.println("Grade: failed");
+            } else if (grade <= 59) {
+                System.out.println("Grade: 1");
+            } else if (grade <= 69){
+                System.out.println("Grade: 2");
+            }
+            ```
     - 
